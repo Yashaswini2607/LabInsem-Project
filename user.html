@@ -1,0 +1,35 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h2>📚 My Library</h2>
+        <button onclick="logout()">Logout</button>
+    </nav>
+
+    <main class="container">
+        <h1>User Dashboard</h1>
+        <p>Welcome, <span id="welcome"></span>!</p>
+
+        <input type="text" id="search"
+               placeholder="Search books..."
+               oninput="displayUserBooks()">
+
+        <h2>Available Books</h2>
+        <div id="bookList" class="book-list"></div>
+
+        <h2>My Borrowed Books</h2>
+        <div id="borrowedList" class="book-list"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
